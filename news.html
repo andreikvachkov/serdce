@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЖК Сердце</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrap">
+                <a href="" class="header__logo">
+                    <img src="assets/images/logo.svg" alt="">
+                </a>
+                <a href="" class="header__logo-mob">
+                    <img src="assets/images/logo_mob.svg" alt="">
+                </a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">
+                                квартиры
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                видеоматериалы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                новости и акции
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_right">
+                    <a href="tel:+79995955658" class="header__tel">
+                        +7 999 595 56 58
+                    </a>
+                    <a href="" class="header__choose-btn">
+                        Выбрать квартиру
+                    </a>
+                    <button class="header__burger">
+                        <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1H20" stroke="white" />
+                            <path d="M0 9H20" stroke="white" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="news-page">
+        <div class="container">
+            <div class="news-page__wrap">
+                <div class="breadcrumb">
+                    <ul>
+                        <li>
+                            <a href="">
+                                Главная
+                            </a>
+                        </li>
+                        <li>
+                            Новости и акции
+                        </li>
+                    </ul>
+                </div>
+                <div class="news-page__header">
+                    <h1 class="news-page__title">
+                        новости и <span>акции</span>
+                    </h1>
+                    <div class="news-page__swiper-btn">
+                        <button class="news-page__swiper__prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.816 8H14.16V8.506C14.16 11.171 13.151 13.312 11.338 14.777H27V17.223H11.328C13.14 18.681 14.16 20.835 14.16 23.493V24H11.816V23.494C11.816 21.561 11.125 20.016 9.856 18.945C8.577 17.865 6.658 17.223 4.132 17.223H3.632V14.777H4.132C6.659 14.777 8.578 14.141 9.857 13.063C11.125 11.996 11.816 10.451 11.816 8.506V8Z"
+                                    fill="#292929" />
+                            </svg>
+                        </button>
+                        <button class="news-page__swiper__next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20.184 8H17.84V8.506C17.84 11.171 18.849 13.312 20.662 14.777H5V17.223H20.672C18.86 18.681 17.84 20.835 17.84 23.493V24H20.184V23.494C20.184 21.561 20.875 20.016 22.144 18.945C23.423 17.865 25.342 17.223 27.868 17.223H28.368V14.777H27.868C25.341 14.777 23.422 14.141 22.143 13.063C20.875 11.996 20.184 10.451 20.184 8.506V8Z"
+                                    fill="#292929" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="news-page__filter-btn">
+                    <div class="radio-item">
+                        <input type="radio" class="radio-input" id="news" name="news" value="news" checked>
+                        <label for="news" class="radio-label">новости</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" class="radio-input" id="akcii" name="news" value="akcii">
+                        <label for="akcii" class="radio-label">акции</label>
+                    </div>
+                </div>
+                <div class="news-page__main">
+                    <div class="swiper news-page__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="news-page__item">
+                                    <div class="news-page__item__top">
+                                        <span class="news-page__item__date">
+                                            05 апреля
+                                        </span>
+                                        <span class="news-page__item__date-last">
+                                            до 30 апреля
+                                        </span>
+                                    </div>
+                                    <p class="news-page__item__name">
+                                        квартира за&nbsp;35&nbsp;000&nbsp;₽ в&nbsp;месяц!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-page__item">
+                                    <div class="news-page__item__top">
+                                        <span class="news-page__item__date">
+                                            05 апреля
+                                        </span>
+                                        <span class="news-page__item__date-last">
+                                            до 30 апреля
+                                        </span>
+                                    </div>
+                                    <p class="news-page__item__name">
+                                        квартира за&nbsp;35&nbsp;000&nbsp;₽ в&nbsp;месяц!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-page__item">
+                                    <div class="news-page__item__top">
+                                        <span class="news-page__item__date">
+                                            05 апреля
+                                        </span>
+                                        <span class="news-page__item__date-last">
+                                            до 30 апреля
+                                        </span>
+                                    </div>
+                                    <p class="news-page__item__name">
+                                        квартира за&nbsp;35&nbsp;000&nbsp;₽ в&nbsp;месяц!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-page__item news-page__item_gold">
+                                    <div class="news-page__item__top">
+                                        <span class="news-page__item__date">
+                                            05 апреля
+                                        </span>
+                                        <span class="news-page__item__date-last">
+                                            до 30 апреля
+                                        </span>
+                                    </div>
+                                    <p class="news-page__item__name">
+                                        квартира за&nbsp;35&nbsp;000&nbsp;₽ в&nbsp;месяц!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-page__item">
+                                    <div class="news-page__item__top">
+                                        <span class="news-page__item__date">
+                                            05 апреля
+                                        </span>
+                                        <span class="news-page__item__date-last">
+                                            до 30 апреля
+                                        </span>
+                                    </div>
+                                    <p class="news-page__item__name">
+                                        квартира за&nbsp;35&nbsp;000&nbsp;₽ в&nbsp;месяц!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-page__item">
+                                    <div class="news-page__item__top">
+                                        <span class="news-page__item__date">
+                                            05 апреля
+                                        </span>
+                                        <span class="news-page__item__date-last">
+                                            до 30 апреля
+                                        </span>
+                                    </div>
+                                    <p class="news-page__item__name">
+                                        квартира за&nbsp;35&nbsp;000&nbsp;₽ в&nbsp;месяц!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-page__item">
+                                    <div class="news-page__item__top">
+                                        <span class="news-page__item__date">
+                                            05 апреля
+                                        </span>
+                                        <span class="news-page__item__date-last">
+                                            до 30 апреля
+                                        </span>
+                                    </div>
+                                    <p class="news-page__item__name">
+                                        квартира за&nbsp;35&nbsp;000&nbsp;₽ в&nbsp;месяц!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__top">
+                    <div class="footer__col">
+                        <div class="footer__contact">
+                            <a href="tel:+78998568788" class="footer__tel">
+                                +7 899 856 87 88
+                            </a>
+                            <button class="footer__feedback-btn">
+                                Заказать звонок
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__office-info">
+                            <p class="footer__office-info__title">
+                                Офис продаж
+                            </p>
+                            <div class="footer__office-info__content">
+                                <p>
+                                    Краснодар, Мичуринский проезд, 8А, к.5,
+                                </p>
+                                <p>
+                                    пн-пт: 09:00 - 18:00
+                                </p>
+                                <p>
+                                    сб-вс: 10:00 - 19:00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer__network">
+                            <p class="footer__network__title">
+                                мы в соцсетях
+                            </p>
+                            <div class="footer__network__content">
+                                <a href="">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M30.4276 11.8698L26.7307 29.3042C26.4516 30.5345 25.7245 30.8407 24.6911 30.2615L19.0578 26.1105L16.3401 28.725C16.0391 29.026 15.788 29.2771 15.2078 29.2771L15.613 23.5406L26.0526 14.1072C26.5067 13.703 25.9537 13.4781 25.3473 13.8832L12.4411 22.0102L6.88483 20.2707C5.67646 19.8936 5.65458 19.0623 7.13683 18.4822L28.8692 10.1093C29.8755 9.73222 30.7557 10.3333 30.4276 11.8707V11.8698Z"
+                                            fill="white" fill-opacity="0.6" />
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M29.5586 19.5571C29.5604 19.5571 29.5617 19.5571 29.5634 19.5571C29.6852 19.5571 29.8014 19.506 29.8839 19.4165C29.9677 19.3257 30.0092 19.2039 29.9983 19.0808C29.5599 14.2593 25.7429 10.4406 20.9212 10.0014C20.7989 9.9918 20.6758 10.0315 20.585 10.1158C20.4942 10.1996 20.4436 10.318 20.4449 10.4415C20.5208 16.8492 21.3661 19.4676 29.5586 19.5571ZM29.5586 20.4426C21.3661 20.5321 20.5213 23.1504 20.4453 29.5581C20.444 29.6817 20.4946 29.8 20.5855 29.8839C20.6667 29.9585 20.7728 30 20.8819 30C20.895 30 20.9085 29.9996 20.9216 29.9983C25.7433 29.559 29.5604 25.7408 29.9983 20.9189C30.0092 20.7958 29.9681 20.674 29.8839 20.5831C29.7996 20.4923 29.6822 20.4474 29.5586 20.4426ZM19.0495 10.0036C14.2432 10.4555 10.4383 14.2732 10.0022 19.0816C9.99124 19.2048 10.0323 19.3266 10.1165 19.4174C10.1991 19.5069 10.3156 19.5575 10.437 19.5575C10.4387 19.5575 10.4405 19.5575 10.4422 19.5575C18.6077 19.4637 19.4508 16.8466 19.5276 10.4433C19.5289 10.3197 19.4778 10.2009 19.387 10.1171C19.2953 10.0333 19.1727 9.99224 19.0495 10.0036ZM10.4418 20.4421C10.306 20.4268 10.1995 20.4915 10.1161 20.5823C10.0323 20.6731 9.9908 20.7949 10.0017 20.918C10.4379 25.7264 14.2432 29.5442 19.0495 29.9961C19.0631 29.9974 19.077 29.9978 19.0906 29.9978C19.1997 29.9978 19.3054 29.9568 19.3866 29.8821C19.4774 29.7983 19.5285 29.6795 19.5272 29.556C19.4503 23.153 18.6077 20.536 10.4418 20.4421Z"
+                                            fill="white" fill-opacity="0.6" />
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M29.0904 22.2583C27.1304 20.34 27.3806 20.6319 29.7577 17.3374C31.1755 15.3357 31.7594 14.0847 31.5926 13.5426C31.5091 13.2089 30.3832 13.2923 30.3832 13.2923H26.8802C26.8802 13.2923 26.3381 13.2923 26.1296 13.6677C25.7543 14.3766 25.5874 15.2523 24.8368 16.5451C23.2521 19.3391 22.6266 19.506 22.3764 19.3391C21.7926 18.9221 21.9177 17.7128 21.9177 16.837C21.9177 14.1264 22.293 13.0004 21.167 12.6668C20.9168 12.5834 20.7083 12.5834 20.333 12.5417C19.8743 12.5 19.4155 12.5 18.9985 12.5C17.956 12.5 17.1636 12.5417 16.6215 12.7919C16.2045 13.0004 15.9125 13.4591 16.1211 13.5009C16.3713 13.5426 16.8717 13.6677 17.1636 14.043C17.5389 14.5434 17.4972 15.7111 17.4972 15.7111C17.4972 15.7111 17.7057 18.9221 16.9968 19.2974C16.5381 19.5894 15.8708 19.0055 14.4947 16.4617C13.7857 15.1689 13.7023 14.2932 13.2436 13.7094C12.9517 13.334 12.4096 13.2089 12.4096 13.2089H9.0734C9.0734 13.2089 8.48957 13.1672 8.40617 13.334C8.23936 13.5426 8.40617 13.9596 8.40617 13.9596C8.40617 13.9596 11.0334 20.4234 13.9943 23.6762C16.6215 26.7621 19.7074 26.5953 19.7074 26.5953C19.7074 26.5953 21.5006 26.6787 21.7508 26.22C21.9177 26.0532 21.9594 25.5528 21.9594 25.5528C21.9594 25.5528 21.9177 23.5511 22.7934 23.2591C23.6691 22.9672 24.7534 25.1774 25.9211 26.0115C26.7968 26.6787 27.047 26.5953 27.464 26.5953C28.2981 26.5953 30.5917 26.5953 30.5917 26.5953C30.5917 26.5953 32.2181 26.4285 31.4674 25.0523C31.3423 24.9689 30.967 24.0932 29.0904 22.2583Z"
+                                            fill="white" fill-opacity="0.6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        квартиры
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        видеоматериалы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        новости и акции
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom_top">
+                        <div class="footer__copyright">
+                            2025
+                            <img src="assets/images/copyright.svg" alt="">
+                            ЖК «Сердце»
+                        </div>
+                        <a href="" class="footer__policy">
+                            Политика конфиденциальности
+                        </a>
+                        <a href="" class="footer__personal">
+                            Согласие на обработку персональных данных
+                        </a>
+                    </div>
+                    <div class="footer__bottom_bottom">
+                        Вся предаставленная на сайте информация, касающаяся жилого комплекса, носит
+                        исключительно
+                        информационных характер, никакая информация, материалы, опубликованные на нем, н при
+                        каких
+                        условиях не являются публичной офертой, определяемой положениями статьи 437 Гражданского
+                        кодекса
+                        Российской Федерации. Визуализация и ланировки, представленные на настоящем сайте
+                        являются
+                        ориентировочными
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="video-popup">
+        <button class="video-popup__close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <path d="M45 15L15 45" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15 15L45 45" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="video-popup__container">
+            <video width="100%" height="100%" controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="popup_background"></div>
+    <div class="feedback-popup">
+        <button class="feedback-popup__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M18 6.50391L6 18.5039" stroke="#08114E" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6 6.50391L18 18.5039" stroke="#08114E" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="feedback-popup__wrap">
+            <h3 class="feedback-popup__title">
+                Заполните данные
+                для&nbsp;бронирования
+            </h3>
+            <div class="feedback-popup__text">
+                Стоимость бронирования - 20&nbsp;000&nbsp;₽&nbsp;за&nbsp;20&nbsp;дней
+            </div>
+            <form action="">
+                <div class="feedback-popup__content">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Телефон">
+                </div>
+                <div class="feedback-popup__bottom">
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="checkbox-input" id="feedback-popup_policy"
+                            name="feedback-popup_policy" value="feedback-popup_policy">
+                        <label for="feedback-popup_policy" class="checkbox-label">Я соглашаюсь на обработку
+                            персональных
+                            данных</label>
+                    </div>
+                    <button>
+                        Забронировать бесплатно
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="popup-filter">
+        <button class="popup-filter__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M18 6.50391L6 18.5039" stroke="#08114E" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6 6.50391L18 18.5039" stroke="#08114E" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="popup-filter__wrap">
+            <h3 class="popup-filter__title">
+                Фильтры
+            </h3>
+            <div class="popup-filter__result">
+                <p class="popup-filter__result__name">
+                    Примененные фильтры
+                </p>
+                <div class="popup-filter__result__content">
+                    <button class="all-clear__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                            <path d="M10.5 4.00391L3.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M3.5 4.00391L10.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="popup-filter__result__item">
+                        <span>
+                            3 комнаты
+                        </span>
+                        <button class="clear">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15"
+                                fill="none">
+                                <path d="M10.5 4.00391L3.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3.5 4.00391L10.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="popup-filter__result__item">
+                        <span>
+                            36.5 - 80 м2
+                        </span>
+                        <button class="clear">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15"
+                                fill="none">
+                                <path d="M10.5 4.00391L3.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3.5 4.00391L10.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="popup-filter__result__item">
+                        <span>
+                            8 этаж
+                        </span>
+                        <button class="clear">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15"
+                                fill="none">
+                                <path d="M10.5 4.00391L3.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3.5 4.00391L10.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-filter__main">
+                <div class="popup-filter__top">
+                    <div class="popup-filter__top__row">
+                        <div class="popup-filter__item popup-filter__item__room">
+                            <p class="name">
+                                Количество комнат
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-room-1" name="popup-room"
+                                        value="c">
+                                    <label for="popup-room-1" class="radio-label">C</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-room-2" name="popup-room"
+                                        value="1">
+                                    <label for="popup-room-2" class="radio-label">1</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-room-3" name="popup-room"
+                                        value="2">
+                                    <label for="popup-room-3" class="radio-label">2</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-room-4" name="popup-room"
+                                        value="3">
+                                    <label for="popup-room-4" class="radio-label">3</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-room-5" name="popup-room"
+                                        value="4">
+                                    <label for="popup-room-5" class="radio-label">4+</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-filter__item popup-filter__item__room">
+                            <p class="name">
+                                Количество комнат
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-housing-2" name="popup-housing"
+                                        value="1">
+                                    <label for="popup-housing-2" class="radio-label">1</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-housing-3" name="popup-housing"
+                                        value="2">
+                                    <label for="popup-housing-3" class="radio-label">2</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-housing-4" name="popup-housing"
+                                        value="3">
+                                    <label for="popup-housing-4" class="radio-label">3</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-housing-5" name="popup-housing"
+                                        value="4">
+                                    <label for="popup-housing-5" class="radio-label">4</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-housing-6" name="popup-housing"
+                                        value="5">
+                                    <label for="popup-housing-6" class="radio-label">5</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-filter__top__row">
+                        <div class="popup-filter__item">
+                            <p class="name">
+                                Стоимость, млн ₽
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="choosing-header__slider">
+                                    <div class="price-input">
+                                        <div class="field">
+                                            от <span class="input-min">36</span>
+                                        </div>
+                                        <div class="field">
+                                            до <span class="input-max">120</span>
+                                        </div>
+                                    </div>
+                                    <div class="slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="36" max="120" value="36" step="1">
+                                        <input type="range" class="range-max" min="36" max="120" value="120" step="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-filter__item">
+                            <p class="name">
+                                Этаж
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="choosing-header__slider">
+                                    <div class="price-input">
+                                        <div class="field">
+                                            от <span class="input-min">1</span>
+                                        </div>
+                                        <div class="field">
+                                            до <span class="input-max">20</span>
+                                        </div>
+                                    </div>
+                                    <div class="slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="1" max="20" value="1" step="1">
+                                        <input type="range" class="range-max" min="1" max="20" value="20" step="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-filter__top__row">
+                        <div class="popup-filter__item">
+                            <p class="name">
+                                Площадь, м2
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="choosing-header__slider">
+                                    <div class="price-input">
+                                        <div class="field">
+                                            от <span class="input-min">1</span>
+                                        </div>
+                                        <div class="field">
+                                            до <span class="input-max">20</span>
+                                        </div>
+                                    </div>
+                                    <div class="slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="1" max="20" value="1" step="1">
+                                        <input type="range" class="range-max" min="1" max="20" value="20" step="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-filter__item popup-filter__item__finish">
+                            <p class="name">
+                                Количество комнат
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-finish-1" name="popup-finish"
+                                        value="White-box">
+                                    <label for="popup-finish-1" class="radio-label">White-box</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-finish-2" name="popup-finish"
+                                        value="Чистовая">
+                                    <label for="popup-finish-2" class="radio-label">Чистовая</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-filter__bottom">
+                    <div class="popup-filter__row">
+                        <div class="popup-filter__col">
+                            <p class="name">
+                                Количество комнат
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-year-1" name="popup-year"
+                                        value="Не важно" checked>
+                                    <label for="popup-year-1" class="radio-label">Не важно</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-year-2" name="popup-year"
+                                        value="2028">
+                                    <label for="popup-year-2" class="radio-label">2028</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-filter__col">
+                            <p class="name">
+                                Вид из окна
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-view-1" name="popup-view"
+                                        value="Не важно" checked>
+                                    <label for="popup-view-1" class="radio-label">Не важно</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-view-2" name="popup-view"
+                                        value="Во двор">
+                                    <label for="popup-view-2" class="radio-label">Во двор</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-view-3" name="popup-view"
+                                        value="На город">
+                                    <label for="popup-view-3" class="radio-label">На город</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-view-4" name="popup-view"
+                                        value="На парк">
+                                    <label for="popup-view-4" class="radio-label">На парк</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-filter__col">
+                        <p class="name">
+                            Вид из окна
+                        </p>
+                        <div class="popup-filter__item__content">
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-1" name="popup-features"
+                                    value="Не важно" checked>
+                                <label for="popup-features-1" class="radio-label">Не важно</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-2" name="popup-features"
+                                    value="Угловая квартира">
+                                <label for="popup-features-2" class="radio-label">Угловая квартира</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-3" name="popup-features"
+                                    value="Мастер-спальня">
+                                <label for="popup-features-3" class="radio-label">Мастер-спальня</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-4" name="popup-features"
+                                    value="Высокие потолки">
+                                <label for="popup-features-4" class="radio-label">Высокие потолки</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-5" name="popup-features"
+                                    value="Окно в ванной">
+                                <label for="popup-features-5" class="radio-label">Окно в ванной</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-6" name="popup-features"
+                                    value="Возможность установки камина">
+                                <label for="popup-features-6" class="radio-label">Возможность установки
+                                    камина</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-7" name="popup-features"
+                                    value="Два санузла">
+                                <label for="popup-features-7" class="radio-label">Два санузла</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-8" name="popup-features"
+                                    value="Лоджия">
+                                <label for="popup-features-8" class="radio-label">Лоджия</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-9" name="popup-features"
+                                    value="Терраса">
+                                <label for="popup-features-9" class="radio-label">Терраса</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-10" name="popup-features"
+                                    value="Окно в гардеробной">
+                                <label for="popup-features-10" class="radio-label">Окно в гардеробной</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-11" name="popup-features"
+                                    value="Отдельный вход">
+                                <label for="popup-features-11" class="radio-label">Отдельный вход</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/animation.js"></script>
+</body>
+
+</html>

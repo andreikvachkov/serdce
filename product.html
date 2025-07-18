@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЖК Сердце</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrap">
+                <a href="" class="header__logo">
+                    <img src="assets/images/logo.svg" alt="">
+                </a>
+                <a href="" class="header__logo-mob">
+                    <img src="assets/images/logo_mob.svg" alt="">
+                </a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">
+                                квартиры
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                видеоматериалы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                новости и акции
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_right">
+                    <a href="tel:+79995955658" class="header__tel">
+                        +7 999 595 56 58
+                    </a>
+                    <a href="" class="header__choose-btn">
+                        Выбрать квартиру
+                    </a>
+                    <button class="header__burger">
+                        <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1H20" stroke="white" />
+                            <path d="M0 9H20" stroke="white" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="product-hero">
+        <div class="container">
+            <div class="product-hero__wrap">
+                <div class="breadcrumb">
+                    <ul>
+                        <li>
+                            <a href="">
+                                Главная
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Квартиры
+                            </a>
+                        </li>
+                        <li>
+                            Квартира 68.2 м2
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-hero__main">
+                    <div class="product-hero__left">
+                        <div class="product-hero__left__content tabs">
+                            <button class="product-hero__left__open-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
+                                    fill="none">
+                                    <path d="M19.4297 13.0753L30.8583 1.64673" stroke="#1D1D1D" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M21.7109 1.64673H30.8538V10.7896" stroke="#1D1D1D" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12.5692 13.0753L1.14062 1.64673" stroke="#1D1D1D" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.2835 1.64673H1.14062V10.7896" stroke="#1D1D1D" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M19.4297 19.9324L30.8583 31.3609" stroke="#1D1D1D" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M21.7109 31.3611H30.8538V22.2183" stroke="#1D1D1D" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12.5692 19.9324L1.14062 31.3609" stroke="#1D1D1D" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10.2835 31.3611H1.14062V22.2183" stroke="#1D1D1D" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="product-hero__left__close-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                    fill="none">
+                                    <path d="M24 8L8 24" stroke="#08114E" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8 8L24 24" stroke="#08114E" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+
+                            <div class="product-hero__tab-nav">
+                                <a class="product-hero__tab-link tab-link active" data-tab="content-1">планировка</a>
+                                <a class="product-hero__tab-link tab-link" data-tab="content-2">на этаже</a>
+                            </div>
+
+                            <div class="product-hero__tab-content tab-content active" id="content-1">
+                                <img src="assets/images/plan.png" alt="">
+                            </div>
+                            <div class="product-hero__tab-content tab-content" id="content-2">
+                                <img src="assets/images/plan.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-hero__right">
+                        <div class="product-hero__right__top">
+                            <a href="" class="product-hero__download">
+                                Скачать буклет
+                            </a>
+                            <div class="btn">
+                                <a href="" class="product-hero__share">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2665_3886)">
+                                            <path
+                                                d="M4.71652 16.361C6.84676 16.361 8.57366 14.6341 8.57366 12.5039C8.57366 10.3736 6.84676 8.64673 4.71652 8.64673C2.58628 8.64673 0.859375 10.3736 0.859375 12.5039C0.859375 14.6341 2.58628 16.361 4.71652 16.361Z"
+                                                stroke="#B2B0B7" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M19.2868 23.6469C21.4171 23.6469 23.144 21.92 23.144 19.7898C23.144 17.6595 21.4171 15.9326 19.2868 15.9326C17.1566 15.9326 15.4297 17.6595 15.4297 19.7898C15.4297 21.92 17.1566 23.6469 19.2868 23.6469Z"
+                                                stroke="#B2B0B7" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M19.2868 9.07537C21.4171 9.07537 23.144 7.34847 23.144 5.21823C23.144 3.08799 21.4171 1.36108 19.2868 1.36108C17.1566 1.36108 15.4297 3.08799 15.4297 5.21823C15.4297 7.34847 17.1566 9.07537 19.2868 9.07537Z"
+                                                stroke="#B2B0B7" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.16406 10.7898L15.8441 6.93262" stroke="#B2B0B7"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.16406 14.2183L15.8441 18.0754" stroke="#B2B0B7"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2665_3886">
+                                                <rect width="24" height="24" fill="white"
+                                                    transform="translate(0 0.503906)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="" class="product-hero__favourit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                        fill="none">
+                                        <path
+                                            d="M12 21.8467L2.53719 13.2752C-2.60567 8.13237 4.95433 -1.74191 12 6.24666C19.0458 -1.74191 26.5715 8.16666 21.4629 13.2752L12 21.8467Z"
+                                            stroke="#B2B0B7" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="product-hero__main-characteristic">
+                            <li>
+                                <span class="name">
+                                    2К
+                                </span>
+                                <span class="value">
+                                    Комнат
+                                </span>
+                            </li>
+                            <li>
+                                <span class="name">
+                                    21
+                                </span>
+                                <span class="value">
+                                    Этаж
+                                </span>
+                            </li>
+                            <li>
+                                <span class="name">
+                                    68.2
+                                </span>
+                                <span class="value">
+                                    Площадь, м2
+                                </span>
+                            </li>
+                            <li>
+                                <span class="name">
+                                    505
+                                </span>
+                                <span class="value">
+                                    Номер квартиры
+                                </span>
+                            </li>
+                            <li>
+                                <span class="name">
+                                    White-box
+                                </span>
+                                <span class="value">
+                                    Отделка
+                                </span>
+                            </li>
+                        </ul>
+                        <p class="product-hero__price">
+                            30 597 000 - 61 194 000 ₽
+                        </p>
+                        <div class="product-hero__dop-characteristic accordion">
+                            <div class="accordion__item">
+                                <div class="accordion__header">
+                                    Все характеристики
+                                </div>
+                                <div class="accordion__body">
+                                    <div class="accordion__content">
+                                        <ul>
+                                            <li>
+                                                <span class="name">
+                                                    Округ:
+                                                </span>
+                                                <span class="value">
+                                                    Центральный
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="name">
+                                                    Расположение:
+                                                </span>
+                                                <span class="value">
+                                                    г. Краснодар, ул. Школьная, 1
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="name">
+                                                    Жилой комплекс:
+                                                </span>
+                                                <span class="value">
+                                                    Сердце
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="name">
+                                                    Литер:
+                                                </span>
+                                                <span class="value">
+                                                    1
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="name">
+                                                    Подьезд:
+                                                </span>
+                                                <span class="value">
+                                                    5
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="name">
+                                                    Этаж:
+                                                </span>
+                                                <span class="value">
+                                                    21
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="name">
+                                                    Условный номер:
+                                                </span>
+                                                <span class="value">
+                                                    389
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="name">
+                                                    Общая площадь:
+                                                </span>
+                                                <span class="value">
+                                                    68.2 м2
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="name">
+                                                    Площадь кухни:
+                                                </span>
+                                                <span class="value">
+                                                    11.86 м2
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="name">
+                                                    Жилая площадь:
+                                                </span>
+                                                <span class="value">
+                                                    34.91 м2
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="name">
+                                                    Артикул:
+                                                </span>
+                                                <span class="value">
+                                                    ID 150579
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="name">
+                                                    Статус:
+                                                </span>
+                                                <span class="value">
+                                                    Свободна
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="name">
+                                                    Стороны света:
+                                                </span>
+                                                <span class="value">
+                                                    Северо-запад, Юго-восток
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="name">
+                                                    Вид из окон:
+                                                </span>
+                                                <span class="value">
+                                                    Двор, ул. Академика Пустовойта/ул. Школьная
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-hero__buttons">
+                            <button class="product-hero__consultation-btn">
+                                Получить консультацию
+                            </button>
+                            <button class="product-hero__bron-btn feedback-popup__open">
+                                Забронировать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-advantages">
+        <div class="container">
+            <div class="product-advantages__wrap tabs">
+                <div class="product-advantages__top">
+                    <h2 class="product-advantages__title">
+                        преимущества квартир
+                    </h2>
+                    <div class="product-advantages__tab-btn">
+                        <a class="product-advantages__tab-link tab-link active"
+                            data-tab="product-advantages-1">отделка</a>
+                        <a class="product-advantages__tab-link tab-link" data-tab="product-advantages-2">ЛОджия</a>
+                        <a class="product-advantages__tab-link tab-link" data-tab="product-advantages-3">терасса</a>
+                    </div>
+                </div>
+                <div class="product-advantages__main">
+                    <div class="product-advantages__tab-content tab-content active" id="product-advantages-1">
+                        <div class="product-advantages__slider">
+                            <div class="swiper product-advantages__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/product-ad.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/product-ad.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/product-ad.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-advantages__bottom">
+                            <div class="product-advantages__bottom_left">
+                                <div class="product-advantages__slider-navigation">
+
+                                </div>
+                                <div class="product-advantages__slider-btn">
+                                    <button class="product-advantages__swiper__prev">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33"
+                                            viewBox="0 0 32 33" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.816 8.50415H14.16V9.01015C14.16 11.6751 13.151 13.8162 11.338 15.2812H27V17.7271H11.328C13.14 19.1852 14.16 21.3392 14.16 23.9972V24.5042H11.816V23.9981C11.816 22.0652 11.125 20.5202 9.856 19.4492C8.577 18.3692 6.658 17.7271 4.132 17.7271H3.632V15.2812H4.132C6.659 15.2812 8.578 14.6452 9.857 13.5672C11.125 12.5002 11.816 10.9552 11.816 9.01015V8.50415Z"
+                                                fill="white" />
+                                        </svg>
+                                    </button>
+                                    <button class="product-advantages__swiper__next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33"
+                                            viewBox="0 0 32 33" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M20.184 8.50415H17.84V9.01015C17.84 11.6751 18.849 13.8162 20.662 15.2812H5V17.7271H20.672C18.86 19.1852 17.84 21.3392 17.84 23.9972V24.5042H20.184V23.9981C20.184 22.0652 20.875 20.5202 22.144 19.4492C23.423 18.3692 25.342 17.7271 27.868 17.7271H28.368V15.2812H27.868C25.341 15.2812 23.422 14.6452 22.143 13.5672C20.875 12.5002 20.184 10.9552 20.184 9.01015V8.50415Z"
+                                                fill="white" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-advantages__bottom_right">
+                                <p>
+                                    Мы позаботились о том, чтобы все грязные и шумные работы были выполнены, чтобы Вы
+                                    как
+                                    можно скорее приступили к реализации дизайн-проекта Вашей квартиры.
+                                </p>
+                                <p>
+                                    В квартирах выполнена стяжка пола, стены выровнены, ошпаклеваны и окрашены базовой
+                                    краской белого цвета. Проведены все коммуникации: выполнена разводка сети
+                                    электроснабжения, в санузлах выполнен ввод холодной и горячей воды, отвод
+                                    канализации,
+                                    установлены запорные краны и заглушки. Выполнена тепло- и звукоизоляция стояков
+                                    канализации и водоснабжения.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-advantages__tab-content tab-content" id="product-advantages-2">
+                        <div class="product-advantages__slider">
+                            <div class="swiper product-advantages__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/product-ad.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/product-ad.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/product-ad.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-advantages__bottom">
+                            <div class="product-advantages__bottom_left">
+                                <div class="product-advantages__slider-navigation">
+
+                                </div>
+                                <div class="product-advantages__slider-btn">
+                                    <button class="product-advantages__swiper__prev">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33"
+                                            viewBox="0 0 32 33" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.816 8.50415H14.16V9.01015C14.16 11.6751 13.151 13.8162 11.338 15.2812H27V17.7271H11.328C13.14 19.1852 14.16 21.3392 14.16 23.9972V24.5042H11.816V23.9981C11.816 22.0652 11.125 20.5202 9.856 19.4492C8.577 18.3692 6.658 17.7271 4.132 17.7271H3.632V15.2812H4.132C6.659 15.2812 8.578 14.6452 9.857 13.5672C11.125 12.5002 11.816 10.9552 11.816 9.01015V8.50415Z"
+                                                fill="white" />
+                                        </svg>
+                                    </button>
+                                    <button class="product-advantages__swiper__next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33"
+                                            viewBox="0 0 32 33" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M20.184 8.50415H17.84V9.01015C17.84 11.6751 18.849 13.8162 20.662 15.2812H5V17.7271H20.672C18.86 19.1852 17.84 21.3392 17.84 23.9972V24.5042H20.184V23.9981C20.184 22.0652 20.875 20.5202 22.144 19.4492C23.423 18.3692 25.342 17.7271 27.868 17.7271H28.368V15.2812H27.868C25.341 15.2812 23.422 14.6452 22.143 13.5672C20.875 12.5002 20.184 10.9552 20.184 9.01015V8.50415Z"
+                                                fill="white" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-advantages__bottom_right">
+                                <p>
+                                    Мы позаботились о том, чтобы все грязные и шумные работы были выполнены, чтобы Вы
+                                    как
+                                    можно скорее приступили к реализации дизайн-проекта Вашей квартиры.
+                                </p>
+                                <p>
+                                    В квартирах выполнена стяжка пола, стены выровнены, ошпаклеваны и окрашены базовой
+                                    краской белого цвета. Проведены все коммуникации: выполнена разводка сети
+                                    электроснабжения, в санузлах выполнен ввод холодной и горячей воды, отвод
+                                    канализации,
+                                    установлены запорные краны и заглушки. Выполнена тепло- и звукоизоляция стояков
+                                    канализации и водоснабжения.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-advantages__tab-content tab-content" id="product-advantages-3">
+                        <div class="product-advantages__slider">
+                            <div class="swiper product-advantages__swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/product-ad.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/product-ad.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/product-ad.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-advantages__bottom">
+                            <div class="product-advantages__bottom_left">
+                                <div class="product-advantages__slider-navigation">
+
+                                </div>
+                                <div class="product-advantages__slider-btn">
+                                    <button class="product-advantages__swiper__prev">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33"
+                                            viewBox="0 0 32 33" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M11.816 8.50415H14.16V9.01015C14.16 11.6751 13.151 13.8162 11.338 15.2812H27V17.7271H11.328C13.14 19.1852 14.16 21.3392 14.16 23.9972V24.5042H11.816V23.9981C11.816 22.0652 11.125 20.5202 9.856 19.4492C8.577 18.3692 6.658 17.7271 4.132 17.7271H3.632V15.2812H4.132C6.659 15.2812 8.578 14.6452 9.857 13.5672C11.125 12.5002 11.816 10.9552 11.816 9.01015V8.50415Z"
+                                                fill="white" />
+                                        </svg>
+                                    </button>
+                                    <button class="product-advantages__swiper__next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33"
+                                            viewBox="0 0 32 33" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M20.184 8.50415H17.84V9.01015C17.84 11.6751 18.849 13.8162 20.662 15.2812H5V17.7271H20.672C18.86 19.1852 17.84 21.3392 17.84 23.9972V24.5042H20.184V23.9981C20.184 22.0652 20.875 20.5202 22.144 19.4492C23.423 18.3692 25.342 17.7271 27.868 17.7271H28.368V15.2812H27.868C25.341 15.2812 23.422 14.6452 22.143 13.5672C20.875 12.5002 20.184 10.9552 20.184 9.01015V8.50415Z"
+                                                fill="white" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-advantages__bottom_right">
+                                <p>
+                                    Мы позаботились о том, чтобы все грязные и шумные работы были выполнены, чтобы Вы
+                                    как
+                                    можно скорее приступили к реализации дизайн-проекта Вашей квартиры.
+                                </p>
+                                <p>
+                                    В квартирах выполнена стяжка пола, стены выровнены, ошпаклеваны и окрашены базовой
+                                    краской белого цвета. Проведены все коммуникации: выполнена разводка сети
+                                    электроснабжения, в санузлах выполнен ввод холодной и горячей воды, отвод
+                                    канализации,
+                                    установлены запорные краны и заглушки. Выполнена тепло- и звукоизоляция стояков
+                                    канализации и водоснабжения.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-slider">
+        <div class="container">
+            <div class="product-slider__wrap">
+                <div class="product-slider__top">
+                    <h2 class="product-slider__title">
+                        похожие квартиры
+                    </h2>
+                    <div class="product-slider__swiper-btn">
+                        <button class="product-slider__swiper__prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.816 8.50415H14.16V9.01015C14.16 11.6751 13.151 13.8162 11.338 15.2812H27V17.7271H11.328C13.14 19.1852 14.16 21.3392 14.16 23.9972V24.5042H11.816V23.9981C11.816 22.0652 11.125 20.5202 9.856 19.4492C8.577 18.3692 6.658 17.7271 4.132 17.7271H3.632V15.2812H4.132C6.659 15.2812 8.578 14.6452 9.857 13.5672C11.125 12.5002 11.816 10.9552 11.816 9.01015V8.50415Z"
+                                    fill="#1D1D1D" />
+                            </svg>
+                        </button>
+                        <button class="product-slider__swiper__next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20.184 8.50415H17.84V9.01015C17.84 11.6751 18.849 13.8162 20.662 15.2812H5V17.7271H20.672C18.86 19.1852 17.84 21.3392 17.84 23.9972V24.5042H20.184V23.9981C20.184 22.0652 20.875 20.5202 22.144 19.4492C23.423 18.3692 25.342 17.7271 27.868 17.7271H28.368V15.2812H27.868C25.341 15.2812 23.422 14.6452 22.143 13.5672C20.875 12.5002 20.184 10.9552 20.184 9.01015V8.50415Z"
+                                    fill="#1D1D1D" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-slider__main">
+                    <div class="swiper product-slider__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <a href class="product-slider__item__content">
+                                        <p class="product-slider__item__name">
+                                            2-комнатная
+                                        </p>
+                                        <div class="product-slider__item__img">
+                                            <img src="assets/images/slider-plan.png" alt="">
+                                        </div>
+                                        <div class="product-slider__item__info">
+                                            <div class="product-slider__item__row">
+                                                <span>
+                                                    23,5 м2
+                                                </span>
+                                                <span>
+                                                    корпус 2
+                                                </span>
+                                            </div>
+                                            <p class="product-slider__item__price">
+                                                12 286 896 ₽
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <button class="product-slider__item__btn feedback-popup__open">
+                                        Забронировать
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <a href class="product-slider__item__content">
+                                        <p class="product-slider__item__name">
+                                            2-комнатная
+                                        </p>
+                                        <div class="product-slider__item__img">
+                                            <img src="assets/images/slider-plan.png" alt="">
+                                        </div>
+                                        <div class="product-slider__item__info">
+                                            <div class="product-slider__item__row">
+                                                <span>
+                                                    23,5 м2
+                                                </span>
+                                                <span>
+                                                    корпус 2
+                                                </span>
+                                            </div>
+                                            <p class="product-slider__item__price">
+                                                12 286 896 ₽
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <button class="product-slider__item__btn feedback-popup__open">
+                                        Забронировать
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <a href class="product-slider__item__content">
+                                        <p class="product-slider__item__name">
+                                            2-комнатная
+                                        </p>
+                                        <div class="product-slider__item__img">
+                                            <img src="assets/images/slider-plan.png" alt="">
+                                        </div>
+                                        <div class="product-slider__item__info">
+                                            <div class="product-slider__item__row">
+                                                <span>
+                                                    23,5 м2
+                                                </span>
+                                                <span>
+                                                    корпус 2
+                                                </span>
+                                            </div>
+                                            <p class="product-slider__item__price">
+                                                12 286 896 ₽
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <button class="product-slider__item__btn feedback-popup__open">
+                                        Забронировать
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <a href class="product-slider__item__content">
+                                        <p class="product-slider__item__name">
+                                            2-комнатная
+                                        </p>
+                                        <div class="product-slider__item__img">
+                                            <img src="assets/images/slider-plan.png" alt="">
+                                        </div>
+                                        <div class="product-slider__item__info">
+                                            <div class="product-slider__item__row">
+                                                <span>
+                                                    23,5 м2
+                                                </span>
+                                                <span>
+                                                    корпус 2
+                                                </span>
+                                            </div>
+                                            <p class="product-slider__item__price">
+                                                12 286 896 ₽
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <button class="product-slider__item__btn feedback-popup__open">
+                                        Забронировать
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <a href class="product-slider__item__content">
+                                        <p class="product-slider__item__name">
+                                            2-комнатная
+                                        </p>
+                                        <div class="product-slider__item__img">
+                                            <img src="assets/images/slider-plan.png" alt="">
+                                        </div>
+                                        <div class="product-slider__item__info">
+                                            <div class="product-slider__item__row">
+                                                <span>
+                                                    23,5 м2
+                                                </span>
+                                                <span>
+                                                    корпус 2
+                                                </span>
+                                            </div>
+                                            <p class="product-slider__item__price">
+                                                12 286 896 ₽
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <button class="product-slider__item__btn feedback-popup__open">
+                                        Забронировать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-form">
+        <div class="container">
+            <div class="product-form__wrap">
+                <div class="product-form__left">
+                    <h2 class="product-form__title">
+                        остались вопросы?
+                    </h2>
+                    <div class="product-form__text">
+                        Оставьте свои данные и наши менеджеры свяжутся с вами
+                    </div>
+                </div>
+                <div class="product-form__right">
+                    <form action="">
+                        <div class="product-form__form-row">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Телефон">
+                        </div>
+                        <div class="product-form__form-bottom">
+                            <div class="product-form__form-consents">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" class="checkbox-input" id="policy" name="policy"
+                                        value="policy">
+                                    <label for="policy" class="checkbox-label">Я согласен с условиями обработки
+                                        персональных данных и политикой кинфиденциальности</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" class="checkbox-input" id="advertisement"
+                                        name="advertisement" value="advertisement">
+                                    <label for="advertisement" class="checkbox-label">Я согласен получать рассылку
+                                        рекламных материалов</label>
+                                </div>
+                            </div>
+                            <button type="submit">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__top">
+                    <div class="footer__col">
+                        <div class="footer__contact">
+                            <a href="tel:+78998568788" class="footer__tel">
+                                +7 899 856 87 88
+                            </a>
+                            <button class="footer__feedback-btn">
+                                Заказать звонок
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__office-info">
+                            <p class="footer__office-info__title">
+                                Офис продаж
+                            </p>
+                            <div class="footer__office-info__content">
+                                <p>
+                                    Краснодар, Мичуринский проезд, 8А, к.5,
+                                </p>
+                                <p>
+                                    пн-пт: 09:00 - 18:00
+                                </p>
+                                <p>
+                                    сб-вс: 10:00 - 19:00
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer__network">
+                            <p class="footer__network__title">
+                                мы в соцсетях
+                            </p>
+                            <div class="footer__network__content">
+                                <a href="">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M30.4276 11.8698L26.7307 29.3042C26.4516 30.5345 25.7245 30.8407 24.6911 30.2615L19.0578 26.1105L16.3401 28.725C16.0391 29.026 15.788 29.2771 15.2078 29.2771L15.613 23.5406L26.0526 14.1072C26.5067 13.703 25.9537 13.4781 25.3473 13.8832L12.4411 22.0102L6.88483 20.2707C5.67646 19.8936 5.65458 19.0623 7.13683 18.4822L28.8692 10.1093C29.8755 9.73222 30.7557 10.3333 30.4276 11.8707V11.8698Z"
+                                            fill="white" fill-opacity="0.6" />
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M29.5586 19.5571C29.5604 19.5571 29.5617 19.5571 29.5634 19.5571C29.6852 19.5571 29.8014 19.506 29.8839 19.4165C29.9677 19.3257 30.0092 19.2039 29.9983 19.0808C29.5599 14.2593 25.7429 10.4406 20.9212 10.0014C20.7989 9.9918 20.6758 10.0315 20.585 10.1158C20.4942 10.1996 20.4436 10.318 20.4449 10.4415C20.5208 16.8492 21.3661 19.4676 29.5586 19.5571ZM29.5586 20.4426C21.3661 20.5321 20.5213 23.1504 20.4453 29.5581C20.444 29.6817 20.4946 29.8 20.5855 29.8839C20.6667 29.9585 20.7728 30 20.8819 30C20.895 30 20.9085 29.9996 20.9216 29.9983C25.7433 29.559 29.5604 25.7408 29.9983 20.9189C30.0092 20.7958 29.9681 20.674 29.8839 20.5831C29.7996 20.4923 29.6822 20.4474 29.5586 20.4426ZM19.0495 10.0036C14.2432 10.4555 10.4383 14.2732 10.0022 19.0816C9.99124 19.2048 10.0323 19.3266 10.1165 19.4174C10.1991 19.5069 10.3156 19.5575 10.437 19.5575C10.4387 19.5575 10.4405 19.5575 10.4422 19.5575C18.6077 19.4637 19.4508 16.8466 19.5276 10.4433C19.5289 10.3197 19.4778 10.2009 19.387 10.1171C19.2953 10.0333 19.1727 9.99224 19.0495 10.0036ZM10.4418 20.4421C10.306 20.4268 10.1995 20.4915 10.1161 20.5823C10.0323 20.6731 9.9908 20.7949 10.0017 20.918C10.4379 25.7264 14.2432 29.5442 19.0495 29.9961C19.0631 29.9974 19.077 29.9978 19.0906 29.9978C19.1997 29.9978 19.3054 29.9568 19.3866 29.8821C19.4774 29.7983 19.5285 29.6795 19.5272 29.556C19.4503 23.153 18.6077 20.536 10.4418 20.4421Z"
+                                            fill="white" fill-opacity="0.6" />
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M29.0904 22.2583C27.1304 20.34 27.3806 20.6319 29.7577 17.3374C31.1755 15.3357 31.7594 14.0847 31.5926 13.5426C31.5091 13.2089 30.3832 13.2923 30.3832 13.2923H26.8802C26.8802 13.2923 26.3381 13.2923 26.1296 13.6677C25.7543 14.3766 25.5874 15.2523 24.8368 16.5451C23.2521 19.3391 22.6266 19.506 22.3764 19.3391C21.7926 18.9221 21.9177 17.7128 21.9177 16.837C21.9177 14.1264 22.293 13.0004 21.167 12.6668C20.9168 12.5834 20.7083 12.5834 20.333 12.5417C19.8743 12.5 19.4155 12.5 18.9985 12.5C17.956 12.5 17.1636 12.5417 16.6215 12.7919C16.2045 13.0004 15.9125 13.4591 16.1211 13.5009C16.3713 13.5426 16.8717 13.6677 17.1636 14.043C17.5389 14.5434 17.4972 15.7111 17.4972 15.7111C17.4972 15.7111 17.7057 18.9221 16.9968 19.2974C16.5381 19.5894 15.8708 19.0055 14.4947 16.4617C13.7857 15.1689 13.7023 14.2932 13.2436 13.7094C12.9517 13.334 12.4096 13.2089 12.4096 13.2089H9.0734C9.0734 13.2089 8.48957 13.1672 8.40617 13.334C8.23936 13.5426 8.40617 13.9596 8.40617 13.9596C8.40617 13.9596 11.0334 20.4234 13.9943 23.6762C16.6215 26.7621 19.7074 26.5953 19.7074 26.5953C19.7074 26.5953 21.5006 26.6787 21.7508 26.22C21.9177 26.0532 21.9594 25.5528 21.9594 25.5528C21.9594 25.5528 21.9177 23.5511 22.7934 23.2591C23.6691 22.9672 24.7534 25.1774 25.9211 26.0115C26.7968 26.6787 27.047 26.5953 27.464 26.5953C28.2981 26.5953 30.5917 26.5953 30.5917 26.5953C30.5917 26.5953 32.2181 26.4285 31.4674 25.0523C31.3423 24.9689 30.967 24.0932 29.0904 22.2583Z"
+                                            fill="white" fill-opacity="0.6" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        квартиры
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        видеоматериалы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        новости и акции
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom_top">
+                        <div class="footer__copyright">
+                            2025
+                            <img src="assets/images/copyright.svg" alt="">
+                            ЖК «Сердце»
+                        </div>
+                        <a href="" class="footer__policy">
+                            Политика конфиденциальности
+                        </a>
+                        <a href="" class="footer__personal">
+                            Согласие на обработку персональных данных
+                        </a>
+                    </div>
+                    <div class="footer__bottom_bottom">
+                        Вся предаставленная на сайте информация, касающаяся жилого комплекса, носит исключительно
+                        информационных характер, никакая информация, материалы, опубликованные на нем, н при каких
+                        условиях не являются публичной офертой, определяемой положениями статьи 437 Гражданского кодекса
+                        Российской Федерации. Визуализация и ланировки, представленные на настоящем сайте являются
+                        ориентировочными
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="video-popup">
+        <button class="video-popup__close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <path d="M45 15L15 45" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15 15L45 45" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="video-popup__container">
+            <video width="100%" height="100%" controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="popup_background"></div>
+    <div class="feedback-popup">
+        <button class="feedback-popup__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M18 6.50391L6 18.5039" stroke="#08114E" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6 6.50391L18 18.5039" stroke="#08114E" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="feedback-popup__wrap">
+            <h3 class="feedback-popup__title">
+                Заполните данные
+                для&nbsp;бронирования
+            </h3>
+            <div class="feedback-popup__text">
+                Стоимость бронирования - 20 000&nbsp;₽&nbsp;за&nbsp;20&nbsp;дней
+            </div>
+            <form action="">
+                <div class="feedback-popup__content">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Телефон">
+                </div>
+                <div class="feedback-popup__bottom">
+                    <div class="checkbox-item">
+                        <input type="checkbox" class="checkbox-input" id="feedback-popup_policy"
+                            name="feedback-popup_policy" value="feedback-popup_policy">
+                        <label for="feedback-popup_policy" class="checkbox-label">Я соглашаюсь на обработку персональных
+                            данных</label>
+                    </div>
+                    <button>
+                        Забронировать бесплатно
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/animation.js"></script>
+</body>
+
+</html>

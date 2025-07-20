@@ -35,7 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         heroImage.classList.add("zoomed");
                         headerBtn.classList.add("visible");
                         headerTel.classList.add("visible");
-                        animation(slides[currentSlide], 'down');
+                        if (window.innerWidth > 768) {
+                            animation(slides[currentSlide], 'down');
+                        }
+
                     }, 1400);
 
                 }, 400);

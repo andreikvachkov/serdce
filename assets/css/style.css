@@ -6200,6 +6200,7 @@ footer {
 
 .news-section {
     padding: 15rem 0 5rem;
+    overflow: hidden;
 }
 @media (max-width: 768px) {
     .news-section {

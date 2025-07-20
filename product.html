@@ -64,12 +64,7 @@
                     <a href="" class="header__choose-btn">
                         Выбрать квартиру
                     </a>
-                    <button class="header__burger">
-                        <svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 1H20" stroke="white" />
-                            <path d="M0 9H20" stroke="white" />
-                        </svg>
-                    </button>
+                    <button class="header__burger"></button>
                 </div>
             </div>
         </div>
@@ -774,7 +769,7 @@
     </section>
 
 
-    <footer>
+        <footer>
         <div class="container">
             <div class="footer__wrap">
                 <div class="footer__top">
@@ -880,10 +875,14 @@
                         </a>
                     </div>
                     <div class="footer__bottom_bottom">
-                        Вся предаставленная на сайте информация, касающаяся жилого комплекса, носит исключительно
-                        информационных характер, никакая информация, материалы, опубликованные на нем, н при каких
-                        условиях не являются публичной офертой, определяемой положениями статьи 437 Гражданского кодекса
-                        Российской Федерации. Визуализация и ланировки, представленные на настоящем сайте являются
+                        Вся предаставленная на сайте информация, касающаяся жилого комплекса, носит
+                        исключительно
+                        информационных характер, никакая информация, материалы, опубликованные на нем, н при
+                        каких
+                        условиях не являются публичной офертой, определяемой положениями статьи 437 Гражданского
+                        кодекса
+                        Российской Федерации. Визуализация и ланировки, представленные на настоящем сайте
+                        являются
                         ориентировочными
                     </div>
                 </div>
@@ -917,7 +916,7 @@
                 для&nbsp;бронирования
             </h3>
             <div class="feedback-popup__text">
-                Стоимость бронирования - 20 000&nbsp;₽&nbsp;за&nbsp;20&nbsp;дней
+                Стоимость бронирования - 20&nbsp;000&nbsp;₽&nbsp;за&nbsp;20&nbsp;дней
             </div>
             <form action="">
                 <div class="feedback-popup__content">
@@ -928,7 +927,8 @@
                     <div class="checkbox-item">
                         <input type="checkbox" class="checkbox-input" id="feedback-popup_policy"
                             name="feedback-popup_policy" value="feedback-popup_policy">
-                        <label for="feedback-popup_policy" class="checkbox-label">Я соглашаюсь на обработку персональных
+                        <label for="feedback-popup_policy" class="checkbox-label">Я соглашаюсь на обработку
+                            персональных
                             данных</label>
                     </div>
                     <button>
@@ -938,8 +938,379 @@
             </form>
         </div>
     </div>
-    <script src="assets/js/app.js"></script>
+    <div class="popup-filter">
+        <button class="popup-filter__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M18 6.50391L6 18.5039" stroke="#08114E" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6 6.50391L18 18.5039" stroke="#08114E" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="popup-filter__wrap">
+            <h3 class="popup-filter__title">
+                Фильтры
+            </h3>
+            <div class="popup-filter__result">
+                <p class="popup-filter__result__name">
+                    Примененные фильтры
+                </p>
+                <div class="popup-filter__result__content">
+                    <button class="all-clear__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                            <path d="M10.5 4.00391L3.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M3.5 4.00391L10.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="popup-filter__result__item">
+                        <span>
+                            3 комнаты
+                        </span>
+                        <button class="clear">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15"
+                                fill="none">
+                                <path d="M10.5 4.00391L3.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3.5 4.00391L10.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="popup-filter__result__item">
+                        <span>
+                            36.5 - 80 м2
+                        </span>
+                        <button class="clear">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15"
+                                fill="none">
+                                <path d="M10.5 4.00391L3.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3.5 4.00391L10.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="popup-filter__result__item">
+                        <span>
+                            8 этаж
+                        </span>
+                        <button class="clear">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15"
+                                fill="none">
+                                <path d="M10.5 4.00391L3.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3.5 4.00391L10.5 11.0039" stroke="#08114E" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-filter__main">
+                <div class="popup-filter__top">
+                    <div class="popup-filter__top__row">
+                        <div class="popup-filter__item popup-filter__item__room">
+                            <p class="name">
+                                Количество комнат
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-room-1" name="popup-room"
+                                        value="c">
+                                    <label for="popup-room-1" class="radio-label">C</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-room-2" name="popup-room"
+                                        value="1">
+                                    <label for="popup-room-2" class="radio-label">1</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-room-3" name="popup-room"
+                                        value="2">
+                                    <label for="popup-room-3" class="radio-label">2</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-room-4" name="popup-room"
+                                        value="3">
+                                    <label for="popup-room-4" class="radio-label">3</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-room-5" name="popup-room"
+                                        value="4">
+                                    <label for="popup-room-5" class="radio-label">4+</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-filter__item popup-filter__item__room">
+                            <p class="name">
+                                Количество комнат
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-housing-2" name="popup-housing"
+                                        value="1">
+                                    <label for="popup-housing-2" class="radio-label">1</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-housing-3" name="popup-housing"
+                                        value="2">
+                                    <label for="popup-housing-3" class="radio-label">2</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-housing-4" name="popup-housing"
+                                        value="3">
+                                    <label for="popup-housing-4" class="radio-label">3</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-housing-5" name="popup-housing"
+                                        value="4">
+                                    <label for="popup-housing-5" class="radio-label">4</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-housing-6" name="popup-housing"
+                                        value="5">
+                                    <label for="popup-housing-6" class="radio-label">5</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-filter__top__row">
+                        <div class="popup-filter__item">
+                            <p class="name">
+                                Стоимость, млн ₽
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="choosing-header__slider">
+                                    <div class="price-input">
+                                        <div class="field">
+                                            от <span class="input-min">36</span>
+                                        </div>
+                                        <div class="field">
+                                            до <span class="input-max">120</span>
+                                        </div>
+                                    </div>
+                                    <div class="slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="36" max="120" value="36" step="1">
+                                        <input type="range" class="range-max" min="36" max="120" value="120" step="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-filter__item">
+                            <p class="name">
+                                Этаж
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="choosing-header__slider">
+                                    <div class="price-input">
+                                        <div class="field">
+                                            от <span class="input-min">1</span>
+                                        </div>
+                                        <div class="field">
+                                            до <span class="input-max">20</span>
+                                        </div>
+                                    </div>
+                                    <div class="slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="1" max="20" value="1" step="1">
+                                        <input type="range" class="range-max" min="1" max="20" value="20" step="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-filter__top__row">
+                        <div class="popup-filter__item">
+                            <p class="name">
+                                Площадь, м2
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="choosing-header__slider">
+                                    <div class="price-input">
+                                        <div class="field">
+                                            от <span class="input-min">1</span>
+                                        </div>
+                                        <div class="field">
+                                            до <span class="input-max">20</span>
+                                        </div>
+                                    </div>
+                                    <div class="slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="1" max="20" value="1" step="1">
+                                        <input type="range" class="range-max" min="1" max="20" value="20" step="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-filter__item popup-filter__item__finish">
+                            <p class="name">
+                                Количество комнат
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-finish-1" name="popup-finish"
+                                        value="White-box">
+                                    <label for="popup-finish-1" class="radio-label">White-box</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-finish-2" name="popup-finish"
+                                        value="Чистовая">
+                                    <label for="popup-finish-2" class="radio-label">Чистовая</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-filter__bottom">
+                    <div class="popup-filter__row">
+                        <div class="popup-filter__col">
+                            <p class="name">
+                                Количество комнат
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-year-1" name="popup-year"
+                                        value="Не важно" checked>
+                                    <label for="popup-year-1" class="radio-label">Не важно</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-year-2" name="popup-year"
+                                        value="2028">
+                                    <label for="popup-year-2" class="radio-label">2028</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-filter__col">
+                            <p class="name">
+                                Вид из окна
+                            </p>
+                            <div class="popup-filter__item__content">
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-view-1" name="popup-view"
+                                        value="Не важно" checked>
+                                    <label for="popup-view-1" class="radio-label">Не важно</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-view-2" name="popup-view"
+                                        value="Во двор">
+                                    <label for="popup-view-2" class="radio-label">Во двор</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-view-3" name="popup-view"
+                                        value="На город">
+                                    <label for="popup-view-3" class="radio-label">На город</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" class="radio-input" id="popup-view-4" name="popup-view"
+                                        value="На парк">
+                                    <label for="popup-view-4" class="radio-label">На парк</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-filter__col">
+                        <p class="name">
+                            Вид из окна
+                        </p>
+                        <div class="popup-filter__item__content">
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-1" name="popup-features"
+                                    value="Не важно" checked>
+                                <label for="popup-features-1" class="radio-label">Не важно</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-2" name="popup-features"
+                                    value="Угловая квартира">
+                                <label for="popup-features-2" class="radio-label">Угловая квартира</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-3" name="popup-features"
+                                    value="Мастер-спальня">
+                                <label for="popup-features-3" class="radio-label">Мастер-спальня</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-4" name="popup-features"
+                                    value="Высокие потолки">
+                                <label for="popup-features-4" class="radio-label">Высокие потолки</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-5" name="popup-features"
+                                    value="Окно в ванной">
+                                <label for="popup-features-5" class="radio-label">Окно в ванной</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-6" name="popup-features"
+                                    value="Возможность установки камина">
+                                <label for="popup-features-6" class="radio-label">Возможность установки
+                                    камина</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-7" name="popup-features"
+                                    value="Два санузла">
+                                <label for="popup-features-7" class="radio-label">Два санузла</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-8" name="popup-features"
+                                    value="Лоджия">
+                                <label for="popup-features-8" class="radio-label">Лоджия</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-9" name="popup-features"
+                                    value="Терраса">
+                                <label for="popup-features-9" class="radio-label">Терраса</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-10" name="popup-features"
+                                    value="Окно в гардеробной">
+                                <label for="popup-features-10" class="radio-label">Окно в гардеробной</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" class="radio-input" id="popup-features-11" name="popup-features"
+                                    value="Отдельный вход">
+                                <label for="popup-features-11" class="radio-label">Отдельный вход</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="mobile-menu__wrap">
+            <ul>
+                <li>
+                    <a href="">
+                        Квартиры
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        видеоматериалы
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        новости и акции
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        контакты
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script src="assets/js/animation.js"></script>
+    <script src="assets/js/app.js"></script>
+
 </body>
 
 </html>

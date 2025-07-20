@@ -24,7 +24,7 @@
 
 </head>
 
-<body>
+<body class="">
     <header>
         <div class="container">
             <div class="header__wrap">
@@ -70,72 +70,92 @@
             </div>
         </div>
     </header>
-    <section class="state-page">
+    <section class="preloader">
         <div class="container">
-            <div class="state-page__wrap">
-                <div class="breadcrumb">
-                    <ul>
-                        <li>
-                            <a href="">
-                                Главная
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Новости и акции
-                            </a>
-                        </li>
-                        <li>
-                            IT ипотека в любом банке без комиссии
-                        </li>
-                    </ul>
-                </div>
-                <h1 class="state-page__title">
-                    IT ипотека в любом банке без комиссии
-                </h1>
-                <div class="state-page__main">
-                    <img src="assets/images/state.png" alt="">
-                    <div class="state-page__content">
-                        <p>
-                            Сотрудники IT-компаний сегодня могут воспользоваться льготной ипотечной программой со
-                            ставкой от 5%, предоставляемой в рамках государственной поддержки. Однако не все знают, что
-                            получить такую ипотеку можно не только в одном из крупных банков, но в любом банке,
-                            аккредитованном по этой программе.
-                        </p>
-                        <p>
-                            Ключевые преимущества:
-                        </p>
-                        <ul>
-                            <li>
-                                Без комиссии за сопровождение: оформление сделки без дополнительных сборов со стороны
-                                агентства.
-                            </li>
-                            <li>
-                                Выбор любого банка: не ограничиваем вас только партнёрскими банками — вы выбираете тот,
-                                который вам удобен.
-                            </li>
-                            <li>
-                                Полное сопровождение: от предварительной консультации до получения одобрения и выхода на
-                                сделку.
-                            </li>
-                            <li>
-                                Экспертиза в IT-ипотеке: знаем все нюансы и тонкости программы, помогаем ускорить
-                                процесс.
-                            </li>
-                        </ul>
-                        <p>
-                            Если вы работаете в сфере информационных технологий и хотите купить жильё с использованием
-                            льготной ипотеки — мы поможем реализовать это быстро и комфортно, без лишних затрат.
-                        </p>
-                    </div>
-                    <a href="" class="state-page__back">
-                        Назад
-                    </a>
+            <div class="preloader__wrap">
+                <img src="assets/images/preview_logo.svg" alt="">
+                <div class="preloader__percent" id="preloader-percent">
+                    0%
                 </div>
             </div>
         </div>
     </section>
-        <footer>
+    <section class="floor-page">
+        <div class="container">
+            <div class="floor-page__wrap">
+                <a href="" class="floor-page__back">
+                    Назад к выбору этажа
+                </a>
+                <div class="floor-page__main">
+                    <div class="floor-page__info">
+                        <div class="floor-page__info__item">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" fill="white" />
+                                <rect x="0.5" y="0.5" width="31" height="31" stroke="black" stroke-opacity="0.1" />
+                            </svg>
+                            Доступо для покупки
+                        </div>
+                    </div>
+                    <div class="floor-page__content">
+                        <div class="floor-page__content__img">
+                            <img src="assets/images/floor.png" alt="" class="floor-page__img">
+                        </div>
+                        <div class="floor-page__nav">
+                            <p class="name">
+                                Этаж
+                            </p>
+                            <nav>
+                                <a href="" class="next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                        fill="none">
+                                        <path
+                                            d="M0.714844 15L9.50056 6.21429C9.56469 6.14596 9.64214 6.0915 9.72814 6.05427C9.81413 6.01704 9.90685 5.99783 10.0006 5.99783C10.0943 5.99783 10.187 6.01704 10.273 6.05427C10.359 6.0915 10.4364 6.14596 10.5006 6.21429L19.2863 15"
+                                            stroke="#000001" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            10
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="active">
+                                            9
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            8
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="" class="prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                                        fill="none">
+                                        <path
+                                            d="M0.714844 6L9.50056 14.7857C9.56469 14.854 9.64214 14.9085 9.72814 14.9457C9.81413 14.983 9.90685 15.0022 10.0006 15.0022C10.0943 15.0022 10.187 14.983 10.273 14.9457C10.359 14.9085 10.4364 14.854 10.5006 14.7857L19.2863 6"
+                                            stroke="#000001" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="floor-page__sunny-side">
+                        <img src="assets/images/sunny.svg" alt="">
+                    </div>
+                    <a href="" class="floor-page__btn">
+                        Подбор по параметрам
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
         <div class="container">
             <div class="footer__wrap">
                 <div class="footer__top">

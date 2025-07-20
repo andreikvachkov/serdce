@@ -205,7 +205,15 @@ const landscape_section__swiper = new Swiper('.landscape-section__swiper', {
     }
 
 });
+const burger = document.querySelector('.header__burger');
+const mobileMenu = document.querySelector('.mobile-menu');
 
+if (burger && mobileMenu) {
+    burger.addEventListener('click', function () {
+        burger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+}
 const two_section__swiper = new Swiper('.two-section__swiper', {
     slidesPerView: 'auto',
     loop: false,
